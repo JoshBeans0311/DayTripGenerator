@@ -29,7 +29,12 @@ tripQuestions = prompt("Would you like to take a day trip? ");
         console.log("Too bad, you are missing out.");
     }
 
+let continueIteration = true
+let destinationAnswer = "Yes"
 
+while(destinationAnswer === false){
+    if()
+}
 
 const destination = ["Tampa, FL.", "Denver, CO.", "Anchorage, AK.", "Nashville, TN.", "New York City, NY."];
 
@@ -53,7 +58,7 @@ const random2 = Math.floor(Math.random() * transportation.length);
 
 
 
-const restaraunt = ["Burger King", "Outback Steakhouse", "Ruth's Chris Steakhouse", "Long John Silvers", "Home Cooked Meal" ];
+const restaraunt = ["Burger King.", "Outback Steakhouse.", "Ruth's Chris Steakhouse.", "Long John Silvers.", "Home Cooked Meal." ];
 
 const random1 = Math.floor(Math.random() * restaraunt.length);
     console.log("You will be eating at " + restaraunt[random1]);
