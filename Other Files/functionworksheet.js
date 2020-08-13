@@ -16,35 +16,29 @@
 // KEEP IN
 //////////////////////////
 
-
-
-
-
+//Use upper/lowercase to validation Yes/No choice
+//Create a function for each array ie, chooseDestination, chooseTransporation
+//Create one "main" function for the whole program that calls everything in order.
+//Try to export the "Would you like to re-choose?" into its own function <-- Most difficult
 
 let tripQuestions = ""
 
 tripQuestions = prompt("Would you like to take a day trip? ");
 
-
-
     if (tripQuestions = "Yes") {
         let phrase = "Congratulations, let's plan your trip.";
         console.log(phrase);
+        //Call the next function
     }
     else {
         console.log("Too bad, you are missing out.");
+        //Don't call the next function, just return
 
-
-
-
-
-// !!!!!!!!!!!!!!!!!     NEED TO FIGURE OUT HOW TO END CODE HERE IF ELSE TRUE      !!!!!!!!!!!!
     }
 
-
+// !!!!!!!!!!!!!!!!!     NEED TO FIGURE OUT HOW TO END CODE HERE IF "ELSE"      !!!!!!!!!!!!
+    
 //////////////////////////////////////////
-
-
 
     let destinationYes = "Yes"
 
@@ -157,4 +151,4 @@ const random3 = Math.floor(Math.random() * entertainment.length);
 
 
 
-
+/// Maybe see if you could loop all the way back to the top, or in between different options (probably too advanced)

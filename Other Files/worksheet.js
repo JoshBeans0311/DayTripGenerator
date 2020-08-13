@@ -1,0 +1,205 @@
+ "use strict"
+
+
+
+function dayTripPlanner(){
+    
+    let destinationYes = "Yes"    
+    let destinationAnswer = chooseDestination();      
+    console.log("You are taking a day trip to " + destinationAnswer)
+
+    happyDestination = prompt("Are you happy with this selection? If yes, type Yes. If no, type no.")
+
+    if (happyDestination =! destinationYes) {
+
+    dayTripPlanner();}
+
+    else console.log("Great!")
+
+}
+
+dayTripPlanner();
+
+function chooseDestination (){
+    const destination = ["Tampa, FL.", "Denver, CO.", "Anchorage, AK.", "Nashville, TN.", "New York City, NY."];
+    const random = Math.floor(Math.random() * destination.length);
+    return destination[random];
+}
+
+function chooseTransportation (){
+    const transportation = ["bicycle", "private jet", "yacht", "lamborghini", "skateboard"];
+    const random2 = Math.floor(Math.random() * transportation.length);
+    return transportation[random2];
+}
+
+function chooseRestaraunt (){
+    const restaraunt = ["Burger King", "Outback Steakhouse", "Ruth's Chris Steakhouse", "Long John Silvers", "Home Cooked Meal" ];
+    const random1 = Math.floor(Math.random() * restaraunt.length);
+    return restaraunt[random1];
+}
+
+function chooseEntertainment (){
+    const entertainment = ["go to the circus", "go to a play", "walk in the park", "go volunteering", "go sightseeing"];
+    const random3 = Math.floor(Math.random() * entertainment.length);
+    return entertainment[random3];
+}
+
+
+
+
+
+
+
+
+// // ///Prompt about day trip if/else yes/no
+// // ///Randomly generate Destination
+// //     ///Offer to re-generate
+// // ///Randomly generate Restaraunt
+// //     ///Offer to re-generate
+// // ///Randomly generate Transportation
+// //     ///Offer to re-generate
+// // ///Randomly generate Entertainment
+// //     ///Offer to re-generate
+// // ///Display Trip in Console
+
+// // ////////////////////////
+// // // KEEP IN
+// // //////////////////////////
+
+// // //Use upper/lowercase to validation Yes/No choice
+// // //Create a function for each array ie, chooseDestination, chooseTransporation
+// // //Create one "main" function for the whole program that calls everything in order.
+// // //Try to export the "Would you like to re-choose?" into its own function <-- Most difficult
+
+// let tripQuestions = ""
+
+// tripQuestions = prompt("Would you like to take a day trip? ");
+
+//     if (tripQuestions = "Yes") {
+//         let phrase = "Congratulations, let's plan your trip.";
+//         console.log(phrase);
+//         //Call the next function
+//     }
+//     else {
+//         console.log("Too bad, you are missing out.");
+//         //Don't call the next function, just return
+
+
+
+//     }
+
+// // // !!!!!!!!!!!!!!!!!     NEED TO FIGURE OUT HOW TO END CODE HERE IF "ELSE"      !!!!!!!!!!!!
+    
+// // //////////////////////////////////////////
+
+//     let destinationYes = "Yes"
+
+//     let askDestination = " ";
+    
+//     while(askDestination != destinationYes){
+        
+//         let destination = chooseDestination();
+           
+//         console.log("You are taking a day trip to " + destination)
+
+
+//         askDestination = prompt("Will this destination work for you? If so type Yes, type No to try again:");
+    
+//         if (askDestination === destinationYes) {
+//             console.log("Congratulations, wise choice!");
+        
+//         }
+        
+//         else {
+//             console.log("Okay, how do you feel about the next location?");
+//         }
+//     }
+
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//     let transportationYes = "Yes"
+
+//     let askTransportation = " ";
+    
+//     while(askTransportation != transportationYes){
+
+
+// const transportation = ["bicycle", "private jet", "yacht", "lamborghini", "skateboard"];
+// const random2 = Math.floor(Math.random() * transportation.length);
+//     console.log("You will take a " + transportation[random2] + " for this trip.");
+        
+
+//     askTransportation = prompt("Will this transportation work for you? If so type Yes, type No to try again:");
+    
+//     if (askTransportation === transportationYes) {
+//         console.log("Congratulations, wise choice!");
+    
+//     }
+    
+//     else {
+//         console.log("Okay, how do you feel about this next type of transportation?");
+//     }
+// }
+
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//     let restarauntYes = "Yes"
+
+//     let askRestaraunt = " ";
+
+//     while(askRestaraunt != restarauntYes){
+
+
+// const restaraunt = ["Burger King", "Outback Steakhouse", "Ruth's Chris Steakhouse", "Long John Silvers", "Home Cooked Meal" ];
+// const random1 = Math.floor(Math.random() * restaraunt.length);
+//     console.log("You will be eating at " + restaraunt[random1]);
+
+
+//     askRestaraunt = prompt("Will this restaraunt work for you? If so type Yes, type No to try again:");
+    
+//     if (askRestaraunt === restarauntYes) {
+//         console.log("Congratulations, wise choice!");
+    
+//     }
+    
+//     else {
+//         console.log("Okay, how do you feel about this next restaraunt?");
+//     }
+// }
+
+
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//     let entertainmentYes = "Yes"
+
+//     let askEntertainment = " ";
+
+//     while(askEntertainment != entertainmentYes){
+
+
+// const entertainment = ["go to the circus", "go to a play", "walk in the park", "go volunteering", "go sightseeing"];
+// const random3 = Math.floor(Math.random() * entertainment.length);
+//     console.log("After eating, you will " + entertainment[random3] + ".");
+
+
+//     askEntertainment = prompt("Does this sound fun to you? If so type Yes, type No to try again:");
+    
+//     if (askEntertainment === entertainmentYes) {
+//         console.log("Congratulations, wise choice. Enjoy your trip!");
+    
+//     }
+    
+//     else {
+//         console.log("Okay, how do you feel about this next activity?");
+//     }
+// }
+
+
+
+// // /// Maybe see if you could loop all the way back to the top, or in between different options (probably too advanced)
